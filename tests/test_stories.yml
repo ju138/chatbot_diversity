@@ -1,0 +1,161 @@
+#### This file contains tests to evaluate that your bot behaves as expected.
+#### If you want to learn more, please see the docs: https://rasa.com/docs/rasa/testing-your-assistant
+
+stories:
+- story: happy path 1
+  steps:
+  - user: |
+      hello there!
+    intent: greet
+  - action: utter_greet
+  - user: |
+      amazing
+    intent: mood_great
+  - action: utter_happy
+
+- story: happy path 2
+  steps:
+  - user: |
+      hello there!
+    intent: greet
+  - action: utter_greet
+  - user: |
+      amazing
+    intent: mood_great
+  - action: utter_happy
+  - user: |
+      bye-bye!
+    intent: goodbye
+  - action: utter_goodbye
+
+- story: sad path 1
+  steps:
+  - user: |
+      hello
+    intent: greet
+  - action: utter_greet
+  - user: |
+      not good
+    intent: mood_unhappy
+  - action: utter_cheer_up
+  - action: utter_did_that_help
+  - user: |
+      yes
+    intent: affirm
+  - action: utter_happy
+
+- story: sad path 2
+  steps:
+  - user: |
+      hello
+    intent: greet
+  - action: utter_greet
+  - user: |
+      not good
+    intent: mood_unhappy
+  - action: utter_cheer_up
+  - action: utter_did_that_help
+  - user: |
+      not really
+    intent: deny
+  - action: utter_goodbye
+
+- story: sad path 3
+  steps:
+  - user: |
+      hi
+    intent: greet
+  - action: utter_greet
+  - user: |
+      very terrible
+    intent: mood_unhappy
+  - action: utter_cheer_up
+  - action: utter_did_that_help
+  - user: |
+      no
+    intent: deny
+  - action: utter_goodbye
+
+- story: say goodbye
+  steps:
+  - user: |
+      bye-bye!
+    intent: goodbye
+  - action: utter_goodbye
+
+- story: bot challenge
+  steps:
+  - user: |
+      are you a bot?
+    intent: bot_challenge
+  - action: utter_iamabot
+
+- story: explain diversity
+  steps:
+  - user: |
+      What's diversity?
+    intent: define_diversity
+  - action: utter_explaination_diversity
+
+- story: explain inclusion
+  steps:
+  - user: |
+      What's inclusion?
+    intent: define_inclusion
+  - action: utter_explanation_inclusion
+
+- story: explain bias
+  steps:
+- user: |
+      What is unconscious bias?
+    intent: define_bias
+  - action: utter_explanation_bias
+
+- story: identify bias
+  steps:
+- user: |
+      How can I identify my own biases?
+    intent: identify_bias
+  - action: utter_identify_bias
+
+- story: benefits diversity
+  steps:
+- user: |
+      Why is diversity beneficial?
+    intent: benefits_diversity
+  - action: utter_benefits_diversity
+
+- story: promote inclusion
+  steps:
+- user: |
+      How can I promote inclusion and diversity?
+    intent: promote_inclusion
+  - action: utter_promote_inclusion
+
+- story: help inclusion
+  steps:
+- user: |
+      How can I help my colleagues feel included?
+    intent: help_inclusion
+  - action: utter_help_inclusion
+
+- story: report discrimination
+  steps:
+- user: |
+      What should I do if I see discrimination or exclusion happening?
+    intent: report_discrimination
+  - action: utter_report_discrimination
+
+- story: seminars diversity
+  steps:
+- user: |
+      How often are diversity and inclusion seminars conducted?
+    intent: seminars_diversity
+  - action: utter_seminars_diversity
+
+- story: explain discrimination
+  steps:
+- user: |
+      What does discrimination and exclusion mean?
+    intent: define_discrimination
+  - action: utter_explanation_discrimination

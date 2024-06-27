@@ -1,0 +1,80 @@
+version: "3.1"
+
+stories:
+
+- story: happy path
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: mood_great
+  - action: utter_happy
+
+- story: sad path 1
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: mood_unhappy
+  - action: utter_cheer_up
+  - action: utter_did_that_help
+  - intent: affirm
+  - action: utter_happy
+
+- story: sad path 2
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: mood_unhappy
+  - action: utter_cheer_up
+  - action: utter_did_that_help
+  - intent: deny
+  - action: utter_goodbye
+
+- story: explain diversity
+  steps:
+  - intent: define_diversity
+  - action: utter_explaination_diversity
+
+- story: explain inclusion
+  steps:
+  - intent: define_inclusion
+  - action: utter_explanation_inclusion
+
+- story: explain bias
+  steps:
+  - intent: define_bias
+  - action: utter_explanation_bias
+
+- story: identify bias
+  steps:
+  - intent: identify_bias
+  - action: utter_identify_bias
+
+- story: benefits diversity
+  steps:
+  - intent: benefits_diversity
+  - action: utter_benefits_diversity
+
+- story: promote inclusion
+  steps:
+  - intent: promote_inclusion
+  - action: utter_promote_inclusion
+
+- story: help inclusion
+  steps:
+  - intent: help_inclusion
+  - action: utter_help_inclusion
+
+- story: report discrimination
+  steps:
+  - intent: report_discrimination
+  - action: utter_report_discrimination
+
+- story: seminars diversity
+  steps:
+  - intent: seminars_diversity
+  - action: utter_seminars_diversity
+
+- story: explain discrimination
+  steps:
+  - intent: define_discrimination
+  - action: utter_explanation_discrimination

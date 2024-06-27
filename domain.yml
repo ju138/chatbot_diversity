@@ -1,0 +1,87 @@
+version: "3.1"
+
+intents:
+  - greet
+  - goodbye
+  - affirm
+  - deny
+  - mood_great
+  - mood_unhappy
+  - bot_challenge
+  - define_diversity
+  - define_inclusion
+  - define_bias
+  - identify_bias
+  - benefits_diversity
+  - promote_inclusion
+  - help_inclusion
+  - report_discrimination
+  - seminars_diversity
+  - define_discrimination
+
+responses:
+  utter_greet:
+  - text: "Hey! How are you?"
+
+  utter_cheer_up:
+  - text: "Here is something to cheer you up:"
+    image: "https://i.imgur.com/nGF1K8f.jpg"
+
+  utter_did_that_help:
+  - text: "Did that help you?"
+
+  utter_happy:
+  - text: "Great, carry on!"
+
+  utter_goodbye:
+  - text: "Bye"
+
+  utter_iamabot:
+  - text: "I am a bot, powered by Rasa."
+
+  utter_explaination_diversity:
+  - text: "Diversity refers to the presence of differences within a workplace, including race, gender, age, ethnicity, sexual orientation, and more."
+
+  utter_explanation_inclusion:
+  - text: "Inclusion is about creating an environment where all individuals feel valued, respected, and have equal access to opportunities and resources."
+
+  utter_explanation_bias:
+  - text: "Unconscious bias refers to the automatic judgments and stereotypes we hold about others without realizing it."
+
+  utter_identify_bias:
+  - text: "To identify your biases, reflect on your assumptions and attitudes towards different groups, seek feedback, take implicit bias tests, and educate yourself on diverse perspectives."
+
+  utter_benefits_diversity:
+  - text: "Diversity brings a variety of perspectives, enhances creativity, improves problem-solving, and helps the organization better understand and serve a diverse customer base."
+
+  utter_promote_inclusion:
+  - text: "Promoting inclusion involves providing diversity training, fostering open communication, ensuring diverse leadership representation, and encouraging employee resource groups."
+
+  utter_help_inclusion:
+  - text: "Support colleagues by listening to their experiences, valuing their contributions, supporting them in meeting, and advocating for inclusive practices."
+
+  utter_report_discrimination:
+  - text: "Speak up and report the incident to HR or a designated representative, and support the affected individual. Creating a culture of zero tolerance for such behaviour is crucial."
+
+  utter_seminars_diversity:
+  - text: "Diversity seminars are conducted quarterly to ensure ongoing learning. Check the company intranet in the diversity and inclusion section. Notifications are also sent via email."
+
+  utter_explanation_discrimination:
+  - text: "Discrimination refers to unfair or prejudicial treatment of employees based on characteristics like race, gender, age, religion, or disability, which can lead to a hostile work environment and unequal opportunities."
+
+
+actions:
+  - utter_explanation_diversity
+  - utter_explanation_inclusion
+  - utter_explanation_bias
+  - utter_identify_bias
+  - utter_benefits_diversity
+  - utter_promote_inclusion
+  - utter_help_inclusion
+  - utter_report_discrimination
+  - utter_seminars_diversity
+  - utter_explanation_discrimination
+
+session_config:
+  session_expiration_time: 60
+  carry_over_slots_to_new_session: true

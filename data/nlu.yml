@@ -1,0 +1,150 @@
+version: "3.1"
+
+nlu:
+- intent: greet
+  examples: |
+    - hey
+    - hello
+    - hi
+    - hello there
+    - good morning
+    - good evening
+    - moin
+    - hey there
+    - let's go
+    - hey dude
+    - goodmorning
+    - goodevening
+    - good afternoon
+
+- intent: goodbye
+  examples: |
+    - cu
+    - good by
+    - cee you later
+    - good night
+    - bye
+    - goodbye
+    - have a nice day
+    - see you around
+    - bye bye
+    - see you later
+
+- intent: affirm
+  examples: |
+    - yes
+    - y
+    - indeed
+    - of course
+    - that sounds good
+    - correct
+
+- intent: deny
+  examples: |
+    - no
+    - n
+    - never
+    - I don't think so
+    - don't like that
+    - no way
+    - not really
+
+- intent: mood_great
+  examples: |
+    - perfect
+    - great
+    - amazing
+    - feeling like a king
+    - wonderful
+    - I am feeling very good
+    - I am great
+    - I am amazing
+    - I am going to save the world
+    - super stoked
+    - extremely good
+    - so so perfect
+    - so good
+    - so perfect
+
+- intent: mood_unhappy
+  examples: |
+    - my day was horrible
+    - I am sad
+    - I don't feel very well
+    - I am disappointed
+    - super sad
+    - I'm so sad
+    - sad
+    - very sad
+    - unhappy
+    - not good
+    - not very good
+    - extremly sad
+    - so saad
+    - so sad
+
+- intent: bot_challenge
+  examples: |
+    - are you a bot?
+    - are you a human?
+    - am I talking to a bot?
+    - am I talking to a human?
+
+- intent: define_diversity
+  examples: |
+    - Can you tell me something about diversity?
+    - What's diversity?
+
+- intent: define_inclusion
+  examples: |
+    - Can you tell me what inclusion means?
+    - What's inclusion?
+    - How do you define inclusion?
+
+- intent: define_bias
+  examples: |
+    - What is unconscious bias?
+    - What does unconscious bias mean?
+    - Can you tell me something about unconscious bias?
+
+- intent: identify_bias
+  examples: |
+    - How can I identify my own biases?
+    - How do I know if I am biased?
+    - How to be aware of my own biases?
+
+- intent: benefits_diversity
+  examples: |
+    - Why is diversity beneficial?
+    - What are the benefits of diversity?
+    - What are the advantages of diversity?
+
+- intent: promote_inclusion
+  examples: |
+    - How can I help promoting inclusion?
+    - How to promote inclusion and diversity?
+
+- intent: help_inclusion
+  examples: |
+    - How can I help my colleagues feel included?
+    - How can I help with inclusion?
+    - How can I help create a diverse workplace?
+
+- intent: report_discrimination
+  examples: |
+    - What should I do if I see discrimination or exclusion happening?
+    - What should I do if I witness discrimination or exclusion?
+    - How do I report discrimination or exclusion?
+
+- intent: seminars_diversity
+  examples: |
+    - How often are diversity and inclusion seminars conducted?
+    - Where do I find information about diversity seminars?
+    - Where can I find details about upcoming diversity events?
+    - When is the next seminar?
+
+- intent: define_discrimination
+  examples: |
+    - What does discrimination and exclusion mean?
+    - What's discrimination at workplace?
+    - How do you define discrimination and exclusion?
