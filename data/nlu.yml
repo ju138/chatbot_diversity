@@ -142,6 +142,7 @@ nlu:
     - Where do I find information about diversity seminars?
     - Where can I find details about upcoming diversity events?
     - When is the next seminar?
+    - How to learn more?
 
 - intent: define_discrimination
   examples: |
